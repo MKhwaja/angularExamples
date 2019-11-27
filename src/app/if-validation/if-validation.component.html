@@ -1,0 +1,10 @@
+<h1>If Validation Example </h1>
+<div class="container">
+    <input type="text" id="input" [(ngModel)]="salary">
+    <div *ngIf = "salary>=2000">
+        <label>Your Salary is: {{salary}}</label>
+    </div>
+    <div *ngIf = "data.age > 18">
+        <label>Your eligible to Vote!! as you are age is :{{data.age}}</label>
+    </div>
+</div>

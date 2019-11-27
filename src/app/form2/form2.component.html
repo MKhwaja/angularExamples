@@ -1,0 +1,10 @@
+<h1>Demo Form2 with FormGroup</h1>
+<div class="container">
+<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)">
+        <label>SKU:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="skuInput" placeholder="SKU" [formControl]="myForm.controls['sku']"><br>
+        <label>Product:</label>&nbsp;
+        <input type="text" id="productId" placeholder="Product" [formControl]="myForm.controls['prod']"><br>
+        <button type="submit">Save</button>
+</form>
+</div>

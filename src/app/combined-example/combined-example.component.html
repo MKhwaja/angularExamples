@@ -1,0 +1,22 @@
+<h1>Demo for All Validations Example </h1>
+<div class="container">
+    <div>
+        <select [(ngModel)]="selectedOption">
+            <option *ngFor="let city of cities">
+                {{city}}
+            </option>
+        </select>
+        <p>Your Selected option is : {{selectedOption}}</p>
+    </div>
+    <div [ngSwitch]="selectedOption">
+        <p *ngSwitchCase="'Chennai'">
+            For {{selectedOption}} city you get an additional discount for bus!
+        </p>
+        <p *ngSwitchCase="'Bangalore'">
+            For {{selectedOption}} city there is a rise in bus price!
+        </p>
+        <p *ngSwitchCase="'Mumbai'">
+            For {{selectedOption}} city there is a discount on available in hotel price!
+        </p>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<h1>Demo for Services</h1>
+<div class="container">
+    <form #formName="ngForm" (ngSubmit)="OnFormSubmit(formName.value)">
+        <div>
+            <label>SKU: </label>
+            <input type="text" id="skuInput" placeholder="SKU" name="sku" [(ngModel)]="sku">
+            <button type="Submit">Submit</button>
+        </div>
+        <div>
+            <p>Your Product after tax is: {{finalPrice}} </p>
+        </div>
+    </form>
+</div>

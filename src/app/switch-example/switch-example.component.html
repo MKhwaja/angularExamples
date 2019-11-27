@@ -1,0 +1,23 @@
+<h1>Demo for SwitchCase Example</h1>
+<label>
+    <input type="radio" id="option1" [(ngModel)]="myRadio" value="deluxRoom" checked="false">DeluxRoom
+</label>
+<label>
+    <input type="radio" id="option2" [(ngModel)]="myRadio" value="SuperdeluxRoom" checked="false">SuperDeluxRoom
+</label>
+<label>
+    <input type="radio" id="option3" [(ngModel)]="myRadio" value="UltradeluxRoom" checked="false">UltraDeluxRoom
+</label>
+<div class="container">
+    <div [ngSwitch]="myRadio">
+        <p *ngSwitchCase="'deluxRoom'">
+            You have opted for Delux Room!
+        </p>
+        <p *ngSwitchCase="'SuperdeluxRoom'">
+            You have opted Super Delux Room!
+        </p>
+        <p *ngSwitchCase="'UltradeluxRoom'">
+            You have opted for Ultra Delux Room!
+        </p>
+    </div>
+</div>
