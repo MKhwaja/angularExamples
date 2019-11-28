@@ -16,7 +16,7 @@ export class ServiceexampleComponent implements OnInit {
   }
 
   OnFormSubmit(form: any): void {
-    this.finalPrice = this.ps.calculatePrice(form.sku);
+    this.finalPrice = this.ps.calculatePrice(form.sal);
   }
 
   ngOnInit() {
